@@ -4,7 +4,7 @@ import UnoCSS from 'unocss/vite';
 
 export default defineConfig((env) => ({
   plugins: [solidPlugin(), UnoCSS()],
-  base: 'solidjs-use-playground',
+  base: '/solidjs-use-playground',
   define: {
     'process.env.BABEL_TYPES_8_BREAKING': 'true',
     'process.env.NODE_DEBUG': 'false',
