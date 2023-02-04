@@ -57,9 +57,9 @@ export const Home = () => {
           })),
         }),
       );
-      navigate(`/scratchpad`);
+      navigate(`/solidjs-use-playground`);
     } else if (!context.token && !params.user) {
-      navigate(`/scratchpad`);
+      navigate(`/solidjs-use-playground`);
     }
   });
 
@@ -125,7 +125,7 @@ export const Home = () => {
             </button>
             <p class="pt-1 text-center text-sm text-gray-800 dark:text-gray-300">
               or{' '}
-              <A href="/scratchpad" class="text-solid-medium dark:text-solid-darkdefault hover:underline">
+              <A href="/solidjs-use-playground" class="text-solid-medium dark:text-solid-darkdefault hover:underline">
                 open my scratchpad
               </A>
             </p>

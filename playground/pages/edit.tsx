@@ -36,7 +36,7 @@ interface InternalTab extends Tab {
   _name: string;
 }
 export const Edit = (props: { horizontal: boolean }) => {
-  const scratchpad = useMatch(() => '/scratchpad');
+  const scratchpad = useMatch(() => '/solidjs-use-playground');
   const compiler = new CompilerWorker();
   const formatter = new FormatterWorker();
   const linter = new LinterWorker();
@@ -126,7 +126,7 @@ export const Edit = (props: { horizontal: boolean }) => {
       if (readonly()) {
         localStorage.setItem('scratchpad', JSON.stringify({ files }));
         disableFetch = true;
-        navigate('/scratchpad');
+        navigate('/solidjs-use-playground');
         return;
       } else if (scratchpad()) {
         localStorage.setItem('scratchpad', JSON.stringify({ files }));
